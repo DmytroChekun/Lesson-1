@@ -1,0 +1,122 @@
+body{
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(12, 17, 18), rgb(24, 33, 35), rgb(37, 50, 53), rgb(49, 67, 71), rgb(61, 84, 88), rgb(73, 100, 106), rgb(85, 117, 123), rgb(97, 134, 141), rgb(110, 151, 159), rgb(122, 167, 176), rgb(134, 184, 194));
+    background-repeat: no-repeat;
+    width: 70vw;
+    margin: 0 auto;
+}
+#grid { 
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+    grid-template-areas:
+            "leftcontainer rightcontainer rightcontainer"
+            "footer footer footer";
+    height: 100vh;
+}
+
+#left-container{
+    grid-area: leftcontainer;
+}
+
+#right-container{
+    grid-area: rightcontainer;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer{
+    grid-area: footer;
+}
+
+div{
+    text-align: center;
+}
+
+div img{
+    box-shadow: 4px 4px 39px 0px rgba(0,0,0,0.75);
+    width: 100%;
+}
+
+header{
+
+}
+
+h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #8BA4A8;
+    border-bottom: 4px rgb(49, 79, 104) groove;
+    text-shadow: 5px 2px 2px #122F35;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul p{
+    color: #8BA4A8;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px rgb(49, 79, 104) solid;
+    border-radius: 5px;
+    width: 40vw;
+    background-color: #8BA4A8;
+    list-style-type: none;
+    display: block;
+    text-shadow: 1px 1px 1px black;
+    box-sizing: border-box;
+}
+
+
+a:visited{
+    text-decoration: none;
+}
+
+li:hover a{
+    background: rgb(19, 110, 126);
+}
+
+li a:active{
+    background-color: rgb(12, 53, 77);
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer i{
+    font-size: 38px;
+    padding: 5px;
+    color: #8BA4A8;
+}
+
+footer i:hover{
+    color: rgb(19, 110, 126);
+}
+
+.english{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+}
+
+.english:visited{
+    text-decoration: none;
+    color: rgb(25, 36, 41);
+    border-color: brown;
+}
+
+footer i:active{
+    color:rgb(12, 53, 77);
+}
