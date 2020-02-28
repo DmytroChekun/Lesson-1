@@ -56,6 +56,8 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    overflow-y: auto;
+    height: 450px;
 }
 
 li{
